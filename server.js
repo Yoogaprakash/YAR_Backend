@@ -9,7 +9,13 @@ const nodemailer = require("nodemailer");
 const app = express();
 const port = 5000;
 
-app.use(cors());
+// Use the CORS middleware
+app.use(cors({
+    origin: 'http://localhost:5173/join', // Replace with your frontend domain
+    methods: 'POST', // Specify allowed methods
+}));
+
+app.post('/api/submit', (req, res) => {
 app.use(express.json());
 
 const formatTimestamp = () => {
