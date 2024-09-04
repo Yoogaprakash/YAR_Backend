@@ -2,9 +2,7 @@
   "name": "backend",
   "version": "1.0.0",
   "main": "index.js",
-   "type": "module",
   "scripts": {
-     "start": "server.mjs"
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -12,7 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-     "@octokit/rest": "^21.0.2",
+    "@octokit/rest": "^21.0.2",
     "cors": "^2.8.5",
     "express": "^4.19.2",
     "file-saver": "^2.0.5",
