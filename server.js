@@ -1,11 +1,11 @@
-const express = require("express");
-const multer = require("multer");
-const XLSX = require("xlsx");
-const path = require("path");
-const fs = require("fs");
-const cors = require("cors");
-const nodemailer = require("nodemailer");
-const { Octokit } = require("@octokit/rest");
+import express from "express";
+import multer from "multer";
+import XLSX from "xlsx";
+import path from "path";
+import fs from "fs";
+import cors from "cors";
+import nodemailer from "nodemailer";
+import { Octokit } from "@octokit/rest";
 
 const app = express();
 const port = 5000;
