@@ -5,7 +5,8 @@ import path from "path";
 import fs from "fs";
 import cors from "cors";
 import nodemailer from "nodemailer";
-import { Octokit } from "@octokit/rest";
+// Use dynamic import for ES module
+const { Octokit } = await import("@octokit/rest");
 
 const app = express();
 const port = 5000;
